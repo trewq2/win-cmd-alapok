@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#101b31">
+  <meta name="description" content="Windows 7 CMD és hálózati adminisztráció: részletes VirtualBox NAT labor, gyakorlófeladatok, elmélet, tesztek és egyéni eredménylap.">
+  <title>CMD LAB • Windows 7 hálózati és rendszeradminisztráció</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Ugrás a tartalomra</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Tananyag navigáció">
+      <div class="brand" role="banner"><div class="brand-mark">&gt;_</div><div><strong>CMD<span>LAB</span></strong><small>WINDOWS 7 · VIRTUALBOX</small></div></div>
+      <div class="side-label">TANULÁSI FELÜLET</div>
+      <nav class="side-nav" id="sidebarNav" aria-label="Főmenü"></nav>
+      <div class="side-bottom">
+        <div class="side-status"><span class="status-dot"></span> Statikus, offline is működik</div>
+        <small>A haladás ezen a böngészőn tárolódik.</small>
+      </div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="top-left"><button id="menuToggle" class="icon-button menu-toggle" aria-label="Menü megnyitása" aria-expanded="false">☰</button><span class="breadcrumb" id="breadcrumb">Áttekintés <span> / </span> Tanulói műhely</span></div>
+        <div class="top-right"><span class="small-label">TELJESÍTÉS</span><div class="top-progress"><span id="topProgress"></span></div><b id="topProgressText">0%</b><button class="top-cta" data-goto="report">Eredményeim ↗</button></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div id="homeView" class="view"></div>
+        <div id="lessonView" class="view" hidden></div>
+        <div id="quizView" class="view" hidden></div>
+        <div id="referenceView" class="view" hidden></div>
+        <div id="reportView" class="view" hidden></div>
+      </main>
+      <footer class="footer"><span>CMD LAB / Windows 7 / VirtualBox NAT</span><span>Tanulói gyakorlófelület • Nincs szerveroldali adatküldés</span></footer>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+  <div class="modal-backdrop" id="confirmModal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h3 id="modalTitle">Haladás törlése</h3><p>Ezzel a művelettel törlődnek az ezen a böngészőn tárolt feladatjelölések, jegyzetek és teszteredmények.</p><div class="modal-actions"><button class="btn secondary" id="cancelReset">Mégse</button><button class="btn danger" id="confirmReset">Minden törlése</button></div></div></div>
+</body>
+</html>
